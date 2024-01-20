@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9ac6ff3bbe.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
+                        'color-gray': '#777',
+                        'color-black': '#1C1C1C',
                         clifford: '#da373d',
                     }
                 }
@@ -34,10 +38,36 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-
+    <header class="container mx-auto mt-16">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-7xl text-color-black font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House
+                    </h1>
+                    <p class="py-8 text-lg text-color-gray font-medium">
+                        Tea and Botanical Solutions Supplier Give Optimum <br>
+                        Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary text-xl font-bold">Explore More</button>
+                </div>
+                <div class="relative">
+                    <img src="images/banner.png" class="max-w-lg" />
+                    <div
+                        class="flex justify-center items-center gap-4 max-w-64 p-5 bg-white rounded-xl absolute left-9 -bottom-4 shadow-md">
+                        <i class="fa-solid fa-star text-4xl text-[#FFDC64]"></i>
+                        <div>
+                            <h3 class="text-3xl text-color-black font-extrabold">5.00</h3>
+                            <p class="text-color-gray font-semibold font">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto">
 
     </main>
     <footer>
